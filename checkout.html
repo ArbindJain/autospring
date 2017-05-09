@@ -1,3 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Autospring</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet"> 
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
 
 
 .bg-header {
@@ -7,6 +33,9 @@
     background:transparent!important;
 }
 
+.navbar {
+    margin-bottom: 0px;
+}
 .navbar-inverse {
     background-color: transparent!important;
     border-color: #282f33!important;
@@ -19,46 +48,56 @@
     margin-top: 7.5px!important;
     padding: 4px 16px!important;
     background-color: none!important;
-    border: 1px solid #fff;
-    color: #fff!important;
+    border: 1px solid #36586f;
+    color: #36586f!important;
     font-weight: 500;
 }
-.login-btns {
-    margin-top: 7.5px!important;
-    padding: 4px 16px!important;
-    background-color: none!important;
+
+.login-btn:hover, .login-btn:focus, .login-btn:active {
+    background-color: #36586f!important;
     color: #fff!important;
-    font-weight: 500;
+    font-weight: 300;
 }
 .register-btn {
     margin-top: 7.5px!important;
     margin-left: 7.5px!important;
     padding: 5px 10px!important;
-    background-color: #000!important;
+    background-color: #36586f!important;
     color: #fff!important; 
-    font-weight: 500;  
+    font-weight: 300;
 }
 .pick-btn {
     padding: 10px 25px!important;
     background-color: #282f33!important;
-    color: #fff!important;  
+    color: #282f33!important;  
     border-radius: 0px;
 }
 .navbar-brand {
   padding: 0px;
 }
-.navbar-brand>img {
-  height: 100%;
-  padding: 15px;
-  width: auto;
+
+.btn-blue {
+    color: #fff;
+    background-color: #36586f;
+    border-color: #36586f;
+    width: 130px;
+    height: 35px;
+
 }
+
+.btn-blue-gray {
+    color: #fff;
+ background-color: #36586f;
+ border-radius: 5px;
+}
+
 .why-block > h1{
     padding-top: 15px!important;
     font-family: 'Roboto', sans-serif!important;
     font-weight: 100!important;
     font-size: 44px;
 }
-
+    
 .why-block > p{
     font-family: 'Roboto', sans-serif!important;
     font-size: 18px;
@@ -80,7 +119,7 @@
     margin-bottom: 60px;
 }
 .whychoose-back{
-    background-color: #213A4C;
+    background-color: #36586f;
     color: #fff;
     padding-bottom: 60px;
 }
@@ -93,7 +132,9 @@
 
     padding-top: 10px;
     padding-bottom: 40px;
-    background-color: #36586f;
+    /*background-color: #213A4C;*/
+    background-color: #4f7690;
+   
     color: #fff;
 }
 .why-img > div >img {
@@ -116,14 +157,21 @@ footer {
     padding-bottom: 14px;
 }
 
-footer > div > div > .col-md-2 > ul > li > a {
+footer > div > div > .col-md-4 > ul > li > a {
     color: #fff!important;
     font-weight: 300;
 }
 
-.nav > li > a {
+
+
+.navbar-right > li > a {
     margin-right: 22px;
-    margin-top: 16px!important;
+}
+
+
+.nav-tabs>li>a {
+    margin-right: 0px;
+
 }
 .hero {     
     position:relative;
@@ -143,7 +191,7 @@ footer > div > div > .col-md-2 > ul > li > a {
     margin: 0 auto;
     width: 0;
     height: 0;
-    border-top: solid 30px #282f33;
+    border-top: solid 30px #fff;
     border-left: solid 30px transparent;
     border-right: solid 30px transparent;
 }
@@ -165,67 +213,92 @@ footer > div > div > .col-md-2 > ul > li > a {
     margin: 0 auto;
     width: 0;
     height: 0;
-    border-top: solid 30px #213a4c;
+    border-top: solid 30px #36586f;
     border-left: solid 30px transparent;
     border-right: solid 30px transparent;
 }
 
-/*customer page css*/
-.bg-header2{
-    background-color: #213b4c!important;
+#modaltabs {
+    margin-bottom: 11px;
+    padding-left: 78px;
 }
-.btn-blue {
-    background-color: #213b4c!important;
-    border-color: #213b4c!important;
+.modal-content {
+    min-height: 360px;
+    border-radius: 10px;
+}
+
+.modal-title {
+
+    font-weight: 300!important;
+    color: #213a4c;
+}
+
+.md-input {
+    font-weight: 100!important;
+    margin: 14px;
+    background: white;
+    border: 1px double #DDD;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #282f33;
+    color: #666;
+    outline: none;
+    height: 25px;
+    width: 275px;
+}
+
+.bmv-naming {
+    color: #36586f;
+    font-weight: 300!important;
+    font-family: 'Roboto', sans-serif!important;
+}
+
+.container-fluid {
+
+    margin-top: 50px;
+
+}
+.back-btn {
+    color: #36586f;
+}
+
+.listing {
+
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+    overflow: hidden;
+    background-color: #36586f;
+    border: 1px double #36586f;
+    /*box-shadow: 0 0 5px #282f33;*/
+    border-radius: 2px;
+    padding-bottom: 0;
+}
+.list-image {
+height: 212px;
+padding: 0px
+
+}
+.list-details {
     color: #fff;
+    background-color: #36586f;
+    font-weight: 100!important;
+    padding-bottom: 10px;
+    
 }
-.btn-blue:hover{
-    background-color: #213b4c!important;
-    border-color: #213b4c!important;
+.list-head {
     color: #fff;
+    background-color: #36586f;
+    font-weight: 200!important;
+    margin-bottom: 0px;
+}
+.border-right {
+    border-right: 1px solid #fff;
 }
 
-.bg-header2 > .navbar-inner {
-    background:transparent!important;
-}
+.border-right > p > strong {
+    font-weight: normal;
+} 
 
-/*.bg-header2 > .navbar-inverse {
-    background-color: transparent!important;
-    border-bottom: 10px solid #282f33!important;
-}*/
-
-
-.bg-header2 >  .navbar {
-    border-bottom: 1px solid #000!important;
-    -webkit-box-shadow: 0 8px 6px -6px #213b4c;
-    -moz-box-shadow: 0 8px 6px -6px #213b4c;
-    box-shadow: 0 8px 6px -6px #213b4c;
-
-    /* the rest of your styling */
-}
-.bg-header2 > nav 
-{
-height: 70px;
-line-height: 70px;
-margin-bottom: 0px;
-}
-.bg-header2 > nav > div > #navbarCollapse > .nav > li > .login-btns {
-   
-    padding-left: 0px!important;
-    padding-right: 0px!important;
-}
-
-.navbar {
-    padding: 0;
-    transition: background 0.5s ease-in-out 0s, padding 0.5s ease-in-out 0s;
-}
-.navbar-brand {
-    float: left;
-    font-size: 18px;
-    height: 60px;
-    line-height: 60px;
-    padding: 2px;
-}
 .changethisone {
     margin-top: -5px;
 }
@@ -242,7 +315,7 @@ margin-bottom: 0px;
 
 }
 .table-car {
-    background-color: #272f32;
+    /*background-color: #272f32;*/
     color: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -251,12 +324,15 @@ margin-bottom: 0px;
     margin-top: 10px;
 }
 .deal-col > div {
-    border: 1px solid #fff;
+    color: #fff;
+    border: 1px solid #36586f;
     padding: 10px!important;
     margin-bottom: 10px!important;
     text-align: center;
+    background-color: #213b4c;
 }
 .first-deal-col > div {
+    color: #fff;
     border: 1px solid #255472!important;
     background-color: #255472;
     padding: 10px!important;
@@ -264,6 +340,7 @@ margin-bottom: 0px;
     text-align: center;
 }
 .second-deal-col > div {
+    color: #fff;
     border: 1px solid #2b6688!important;
     background-color: #2b6688;
     padding: 10px!important;
@@ -271,6 +348,7 @@ margin-bottom: 0px;
     text-align: center;
 }
 .third-deal-col > div {
+    color: #fff;
     border: 1px solid #307fa0!important;
     background-color: #307fa0;
     padding: 10px!important;
@@ -278,6 +356,7 @@ margin-bottom: 0px;
     text-align: center;
 }
 .fourth-deal-col > div {
+    color: #fff;
     border: 1px solid #3094b6!important;
     background-color: #3094b6;
     padding: 10px!important;
@@ -285,6 +364,7 @@ margin-bottom: 0px;
     text-align: center;
 }
 .fifth-deal-col > div {
+    color: #fff;
     border: 1px solid #39aecf!important;
     background-color: #39aecf;
     padding: 10px!important;
@@ -292,12 +372,13 @@ margin-bottom: 0px;
     text-align: center;
 }
 .deal-col > div:first-child{
-    border: 0px!important;
+    color: #fff;
+    border: 1px solid #36586f!important;
     text-align: center;
     font-weight: bold;
     padding: 10px!important;
     margin-bottom: 10px!important;
-    background-color: #272f32;
+    background-color: #213b4c;
 }
 .insurance-offer {
     background-color: #fff!important;
@@ -390,11 +471,11 @@ margin-bottom: 0px;
     text-align: center;
 }
 .footer-blk > ul > li > a {
-    color: #aeb0af;
+    color: #36586f;
     padding-right: 36px; 
 }
 .footer-blk > ul > li > a:hover {
-    color: #fff;
+    color: #213b4c;
     text-decoration:none;
 }
 .footer-blk {
@@ -412,7 +493,7 @@ margin-bottom: 0px;
 .radio .cr {
     position: relative;
     display: inline-block;
-    border: 1px solid #a9a9a9;
+    border: 2px solid #a9a9a9;
     border-radius: .25em;
     width: 1.3em;
     height: 1.3em;
@@ -431,6 +512,7 @@ margin-bottom: 0px;
     line-height: 0;
     top: 50%;
     left: 20%;
+    color: #fff;
 }
 
 .radio .cr .cr-icon {
@@ -460,7 +542,7 @@ margin-bottom: 0px;
     opacity: .5;
 }
 .car-card{
-    background-color: #1D3e4e;
+  /*  background-color: #1D3e4e;*/
     padding-top: 6px; 
     padding-bottom: 6px;
     margin-bottom: 20px;
@@ -539,7 +621,8 @@ margin-bottom: 0px;
 }
 .small-red {
     color: red;
-    padding-top: 10px!important;
+    /*padding-top: 10px!important;*/
+    margin: 0px;
 }
 .btn-box {
     padding-top: 15px!important;
@@ -648,3 +731,189 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
     padding-top: 3px;
     color: #3094b6  ;
 }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation block -->
+    
+    
+   
+
+
+          
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog" >
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="border-radius: 0px;">
+      <div class="modal-header" style="background-color: #213a4c; color:white;">
+        <button type="button" class="close" data-dismiss="modal" style="color: #fff;">&times;</button>
+        <h4 class="modal-title" style="color: #fff;"><strong>Hyundai Verna 1.6 SX CRDi</strong>/</h4>
+      </div>
+      <div class="modal-body" style="padding: 0px;">
+         <div class="col-md-12">
+              <div class="col-md-12 text-center noside-padding ">
+                <h2 class="ng-binding">Hyundai Verna 1.6 SX CRDi (O)</h2>
+              </div>
+              <div class="col-md-6 n cardeal-detail">
+<!-- first row -->
+                <div class="col-md-6 noside-padding">
+                   <strong>Ex Showroom Price</strong>
+                </div>
+                <div class="col-md-6 noside-padding text-right ng-binding">
+                  ₹ 1,200,000.00
+                </div>
+<!-- first row -->
+                <div class="col-md-6 noside-padding">
+                   <strong>Road TAX  </strong>
+                </div>
+                <div class="col-md-6 noside-padding text-right text-right ng-binding">
+                  ₹ 250,000.00 
+                </div>
+<!-- first row -->
+                <div class="col-md-6 noside-padding">
+                   <strong>Registration Fees </strong>
+                </div>
+                <div class="col-md-6 noside-padding text-right ng-binding">
+                  ₹ 0.00 
+                </div>
+<!-- first row -->
+                <div class="col-md-6 noside-padding">
+                   <strong>Insurance </strong>
+                </div>
+                <div class="col-md-6 noside-padding text-right ng-binding">
+                  ₹ 40,000.00 
+                </div>
+<!-- first row -->
+                <div class="col-md-6 noside-padding">
+                   <strong>Delivery Time  </strong>
+                </div>
+                <div class="col-md-6 noside-padding text-right ng-binding">
+                  &nbsp;3 days 
+                </div>
+<!-- first row -->
+                <div class="col-md-6 noside-padding">
+                   <strong>Extended Warranty </strong>
+                </div>
+                <div class="col-md-6 noside-padding text-right ng-binding">
+                  &nbsp;N/A 
+                </div>
+<!-- first row -->
+               
+                <div class="col-md-6 noside-padding">
+                   <strong>Color  </strong>
+                </div>
+                <div class="col-md-6 noside-padding text-right ng-binding">
+                  &nbsp;No
+                </div>
+<!-- first row -->
+                <!-- <div class="col-md-6 noside-padding">
+                   <strong>Additional Offers   </strong>
+                </div>
+                <div class="col-md-6 noside-padding text-right">
+                  {{offer.additional_accessories}}
+                </div> -->
+<!-- first row -->
+                <div class="col-md-6 noside-padding">
+                   <strong>Total   </strong>
+                </div>
+                <div class="col-md-6 noside-padding text-right ng-binding" style="color: green; font-weight: bold">
+                  ₹ 1,490,000.00
+                </div>
+<!-- first row -->
+                <div class="col-md-6 noside-padding">
+                   <strong>Total Save   </strong>
+                </div>
+                <div class="col-md-6 noside-padding text-right" style="color: red; font-weight: bold">
+                  ₹ 6000
+                </div>
+              </div>
+              <div class="col-md-6  cardeal-detail">
+<!-- first row -->
+                <div class="col-md-6 noside-padding">
+                   <strong>Standard Fitments : </strong>
+                    <ul class="list-unstyled deal-sub ">
+                      <li>Air Freshner</li>
+                      <li>Seat cover</li>
+                      <li>Floor Mats</li>
+                      <li>Car Cover</li>
+                      <li>Parking Sensor</li>
+                      <li>Audio System</li>
+                      <li>Remote Locking Sys</li>
+                      <li>Fog Lamps</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 noside-padding text-right">
+&nbsp;
+                  <ul class="list-unstyled deal-sub ">
+                    <li class="ng-binding">N/A</li>
+                    <li class="ng-binding">N/A</li>
+                    <li class="ng-binding">N/A</li>
+                    <li class="ng-binding">N/A</li>
+                    <li class="ng-binding">N/A</li>
+                    <li class="ng-binding">N/A</li>
+                    <li class="ng-binding">N/A</li>
+                    <li class="ng-binding">N/A</li>
+                  </ul>
+                </div>
+                
+              
+                <div class="col-md-6 noside-padding">
+                   <strong>Additional Accessories :   </strong>
+                </div>
+                <div class="col-md-6 noside-padding ng-binding">
+                  &nbsp;seat cover,.
+                </div>
+                <div class="col-md-6 noside-padding">
+                   <strong>Additional Offers/Info :   </strong>
+                </div>
+                <div class="col-md-6 noside-padding ng-binding">
+                  &nbsp;gold coin
+                </div>
+               
+            </div>
+            </div>
+      </div>
+      <div class="modal-footer text-center" >
+        <button type="button" class="btn btn-default" data-dismiss="modal" style="margin-top: 20px;">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+   
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script>
+
+    $(document).ready(function () {
+        $(function () {
+
+          var wow = new WOW(
+        {
+          boxClass:     'wow',      // animated element css class (default is wow)
+          animateClass: 'animated', // animation css class (default is animated)
+          offset:       0,          // distance to the element when triggering the animation (default is 0)
+          mobile:       false,       // trigger animations on mobile devices (default is true)
+          live:         true,       // act on asynchronously loaded content (default is true)
+          callback:     function(box) {
+            // the callback is fired every time an animation is started
+            // the argument that is passed in is the DOM node being animated
+          }
+        }
+      );
+      wow.init(); 
+      });
+    });
+</script>
+  </body>
+</html>
