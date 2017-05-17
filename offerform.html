@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Autospring</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet"> 
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+
+
+.bg-header {
+    background-color: #282f33!important;
+}
+.navbar-inner {
+    background:transparent!important;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+.navbar-inverse {
+    background-color: transparent!important;
+    border-color: #282f33!important;
+}
+.navbar-brand {
+    color: #fff!important;
+}
+
+.login-btn {
+    margin-top: 7.5px!important;
+    padding: 4px 16px!important;
+    background-color: none!important;
+    border: 1px solid #36586f;
+    color: #36586f!important;
+    font-weight: 500;
+}
+
+.login-btn:hover, .login-btn:focus, .login-btn:active {
+    background-color: #36586f!important;
+    color: #fff!important;
+    font-weight: 300;
+}
+.register-btn {
+    margin-top: 7.5px!important;
+    margin-left: 7.5px!important;
+    padding: 5px 10px!important;
+    background-color: #36586f!important;
+    color: #fff!important; 
+    font-weight: 300;
+}
+.pick-btn {
+    padding: 10px 25px!important;
+    background-color: #282f33!important;
+    color: #282f33!important;  
+    border-radius: 0px;
+}
+.navbar-brand {
+  padding: 0px;
+}
+
+.btn-blue {
+    color: #fff;
+    background-color: #36586f;
+    border-color: #36586f;
+    width: 130px;
+    height: 35px;
+
+}
+
+.btn-blue-gray {
+    color: #fff;
+ background-color: #36586f;
+ border-radius: 5px;
+}
+
+.why-block > h1{
+    padding-top: 15px!important;
+    font-family: 'Roboto', sans-serif!important;
+    font-weight: 100!important;
+    font-size: 44px;
+}
+    
+.why-block > p{
+    font-family: 'Roboto', sans-serif!important;
+    font-size: 18px;
+    font-weight: 100!important;
+}
+/*.block-head {
+    padding-top: 15px!important;
+    font-size: 50px!important;
+    font-family: 'Roboto', sans-serif!important;
+    font-weight: 100px!important;
+
+}*/
+
+#why-auto > div > div > h1{
+    padding-top: 15px!important;
+    font-family: 'Roboto', sans-serif!important;
+    font-weight: 100!important;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.whychoose-back{
+    background-color: #36586f;
+    color: #fff;
+    padding-bottom: 60px;
+}
+.noside-padding {
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+}
+
+#why-auto {
+
+    padding-top: 10px;
+    padding-bottom: 40px;
+    /*background-color: #213A4C;*/
+    background-color: #4f7690;
+   
+    color: #fff;
+}
+.why-img > div >img {
+    margin: 0 auto!important;
+}
+.why-img > h1 {
+    margin-top : 30px!important;
+}
+.why-img > div > p {
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: capitalize;
+
+}
+footer {
+    background-color: #3d3e3f;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 14px;
+}
+
+footer > div > div > .col-md-4 > ul > li > a {
+    color: #fff!important;
+    font-weight: 300;
+}
+
+
+
+.navbar-right > li > a {
+    margin-right: 22px;
+}
+
+
+.nav-tabs>li>a {
+    margin-right: 0px;
+
+}
+.hero {     
+    position:relative;
+    background-color:#282f33;
+    height:0px !important;
+    width:100% !important;
+
+
+}
+
+.hero:after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: solid 30px #fff;
+    border-left: solid 30px transparent;
+    border-right: solid 30px transparent;
+}
+.heroz {     
+    position:relative;
+    background-color:#213a4c;
+    height:0px !important;
+    width:100% !important;
+
+
+}
+
+.heroz:after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: solid 30px #36586f;
+    border-left: solid 30px transparent;
+    border-right: solid 30px transparent;
+}
+
+#modaltabs {
+    margin-bottom: 11px;
+    padding-left: 78px;
+}
+.modal-content {
+    min-height: 360px;
+    border-radius: 10px;
+}
+
+.modal-title {
+
+    font-weight: 300!important;
+    color: #213a4c;
+}
+
+.md-input {
+    font-weight: 100!important;
+    margin: 14px;
+    background: white;
+    border: 1px double #DDD;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #282f33;
+    color: #666;
+    outline: none;
+    height: 25px;
+    width: 275px;
+}
+
+.bmv-naming {
+    color: #36586f;
+    font-weight: 300!important;
+    font-family: 'Roboto', sans-serif!important;
+}
+
+.container-fluid {
+
+    margin-top: 50px;
+
+}
+.back-btn {
+    color: #36586f;
+}
+
+.listing {
+
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+    overflow: hidden;
+    background-color: #36586f;
+    border: 1px double #36586f;
+    /*box-shadow: 0 0 5px #282f33;*/
+    border-radius: 2px;
+    padding-bottom: 0;
+}
+.list-image {
+height: 212px;
+padding: 0px
+
+}
+.list-details {
+    color: #fff;
+    background-color: #36586f;
+    font-weight: 100!important;
+    padding-bottom: 10px;
+    
+}
+.list-head {
+    color: #fff;
+    background-color: #36586f;
+    font-weight: 200!important;
+    margin-bottom: 0px;
+}
+.border-right {
+    border-right: 1px solid #fff;
+}
+
+.border-right > p > strong {
+    font-weight: normal;
+} 
+
+.changethisone {
+    margin-top: -5px;
+}
+.changethisone span{
+    background-color: #213b4c;
+}
+.changethisone span > i {
+    color: #fff;
+}
+.changethisone input{
+
+    background-color: #213b4c;
+    border-right-style:none; `
+
+}
+.table-car {
+    /*background-color: #272f32;*/
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.deal-table{
+    margin-top: 10px;
+}
+.deal-col > div {
+    color: #fff;
+    border: 1px solid #36586f;
+    padding: 10px!important;
+    margin-bottom: 10px!important;
+    text-align: center;
+    background-color: #213b4c;
+}
+.first-deal-col > div {
+    color: #fff;
+    border: 1px solid #255472!important;
+    background-color: #255472;
+    padding: 10px!important;
+    margin-bottom: 10px!important;
+    text-align: center;
+}
+.second-deal-col > div {
+    color: #fff;
+    border: 1px solid #2b6688!important;
+    background-color: #2b6688;
+    padding: 10px!important;
+    margin-bottom: 10px!important;
+    text-align: center;
+}
+.third-deal-col > div {
+    color: #fff;
+    border: 1px solid #307fa0!important;
+    background-color: #307fa0;
+    padding: 10px!important;
+    margin-bottom: 10px!important;
+    text-align: center;
+}
+.fourth-deal-col > div {
+    color: #fff;
+    border: 1px solid #3094b6!important;
+    background-color: #3094b6;
+    padding: 10px!important;
+    margin-bottom: 10px!important;
+    text-align: center;
+}
+.fifth-deal-col > div {
+    color: #fff;
+    border: 1px solid #39aecf!important;
+    background-color: #39aecf;
+    padding: 10px!important;
+    margin-bottom: 10px!important;
+    text-align: center;
+}
+.deal-col > div:first-child{
+    color: #fff;
+    border: 1px solid #36586f!important;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px!important;
+    margin-bottom: 10px!important;
+    background-color: #213b4c;
+}
+.insurance-offer {
+    background-color: #fff!important;
+    color: #000;
+    font-weight: normal!important;
+}
+.ins-col {
+    background-color: #fff!important;
+    padding-top: 10px;
+}
+.first-ins-col > div {
+    border: 1px solid #272f32!important;
+    background-color: #272f32;
+    padding: 10px!important;
+    margin-bottom: 10px!important;
+    text-align: center;
+}
+
+.first-ins-col > div:first-child {
+    border: 0px solid #272f32!important;
+    background-color: #fff;
+    padding: 10px!important;
+    margin-bottom: 10px!important;
+    text-align: center;
+}
+.first-ins-col > div:last-child {
+    border: 0px solid #272f32!important;
+    background-color: #fff!important;
+    padding: 10px!important;
+    margin-bottom: 10px!important;
+    text-align: center;
+}
+.second-ins-col > div {
+    border: 1px solid #255472!important;
+    background-color: #255472;
+    color: #fff
+    padding: 10px!important;
+    margin-bottom: 10px!important;
+    text-align: center;
+}
+.second-ins-col > div:first-child {
+    border: 0px solid #272f32!important;
+    background-color: #fff;
+    color: #265372;
+    padding: 10px!important;
+    margin-bottom: 10px!important;
+    text-align: center;
+}
+.second-ins-col > div:last-child  {
+    border: 0px solid #272f32!important;
+    background-color: #fff;
+    color: #265372;
+    padding: 10px!important;
+    margin-bottom: 10px!important;
+    text-align: center;
+}
+
+.ac-list {
+    margin-bottom: 0px;
+}
+.ac-list > li {
+    border-top: 1px solid #fff;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.total-col {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.total-col > div {
+    padding: 10px!important;
+    margin-bottom: 10px!important;
+    text-align: center;
+}
+.total-col > div:first-child {
+    border: 1px solid #fff;
+    padding: 10px!important;
+    margin-bottom: 10px!important;
+    text-align: center;
+}
+.check-col > div {
+    padding: 10px!important;
+    margin-bottom: 10px!important;
+    text-align: center;
+}
+.check-col > div:first-child {
+    border: 0px solid #fff;
+    padding: 10px!important;
+    margin-bottom: 10px!important;
+    text-align: center;
+}
+.footer-blk > ul > li > a {
+    color: #36586f;
+    padding-right: 36px; 
+}
+.footer-blk > ul > li > a:hover {
+    color: #213b4c;
+    text-decoration:none;
+}
+.footer-blk {
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 2px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+    color: #fff;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+.car-card{
+  /*  background-color: #1D3e4e;*/
+    padding-top: 6px; 
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+}
+.card-height{
+    height: 60px; 
+    line-height: 60px;
+}
+.card-sub-height{
+    height: 20px; 
+    line-height: 20px;
+    font-weight: 100;
+}
+.card-sub-height-2{
+    height: 60px; 
+    font-weight: 100;
+    border-left: 1px solid #fff;
+}
+.card-date{
+    font-weight: 400;
+}
+.font-100 {
+    font-weight: 100;
+}
+.card-color{
+    border: 1px solid #ccc;
+}
+.btn-trans{
+    background-color: transparent!important; color: #fff!important;
+}
+.btn-trans:hover{
+    background-color: transparent!important; color: #fff!important;
+}
+.card-petrol {
+    border-left: 1px solid #fff;
+}
+.card-petrol-right {
+    border-right: 1px solid #fff;
+}
+.dealer-car-card {
+    background-color: #375a6f;
+    padding-top: 6px; 
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+}
+.btn-de {
+    height: 30px;line-height: 30px; 
+}
+.btn-black-link{
+    color: #000!important;
+}
+.btn-black-link:hover{
+    color: #000!important;
+}
+.checkbox-remove-margin{
+    margin: 0px!important;
+}
+.noborder {
+    border: 0px!important;
+}
+
+#noborderbackground {
+    border: 0px solid transparent!important;
+    background-color: transparent!important;
+}
+
+/*sceen one*/
+.dealer-card {
+    padding: 15px 0px;
+}
+.img-center{
+    margin: 0 auto;
+}
+.thin {
+    font-weight: 300;
+}
+.small-red {
+    color: red;
+    /*padding-top: 10px!important;*/
+    margin: 0px;
+}
+.btn-box {
+    padding-top: 15px!important;
+    padding-bottom: 15px!important;
+}
+.deal-head{
+    margin-bottom: 15px;
+}
+.cardeal-detail > div {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ccc;
+}
+.deal-sub > li {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.car-head > h2 {
+    margin-top: 0px!important;
+    margin-bottom: 24px;
+}
+
+
+/*car specs*/
+
+/*  bhoechie tab */
+div.bhoechie-tab-container{
+  z-index: 10;
+  background-color: #ffffff;
+  padding: 0 !important;
+  /*border-radius: 4px;
+  -moz-border-radius: 4px;
+  border:1px solid #ddd;
+  margin-top: 20px;
+  margin-left: 50px;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+  opacity: 0.97;
+  filter: alpha(opacity=97);*/
+}
+div.bhoechie-tab-menu{
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group{
+  margin-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group>a{
+  margin-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group>a .glyphicon,
+div.bhoechie-tab-menu div.list-group>a .fa {
+  color: #1d3e4e;
+}
+div.bhoechie-tab-menu div.list-group>a:first-child{
+  border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+}
+div.bhoechie-tab-menu div.list-group>a:last-child{
+  border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+}
+div.bhoechie-tab-menu div.list-group>a.active,
+div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
+div.bhoechie-tab-menu div.list-group>a.active .fa{
+  background-color: #1d3e4e;
+  background-image: #1d3e4e;
+  color: #ffffff;
+}
+div.bhoechie-tab-menu div.list-group>a.active:after{
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -13px;
+  border-left: 0;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+  border-left: 10px solid #1d3e4e;
+}
+
+div.bhoechie-tab-content{
+  background-color: #ffffff;
+  /* border: 1px solid #eeeeee; */
+  padding-left: 20px;
+  padding-top: 10px;
+  color: #000;
+}
+
+div.bhoechie-tab div.bhoechie-tab-content:not(.active){
+  display: none;
+}
+/*end of card*/
+.tab-name > h4 {
+    font-size: 14px!important;
+    font-weight: 600;
+    padding-top: 3px;
+    color: #3094b6  ;
+}
+.tab-price > h4{
+    font-size: 14px!important;
+    font-weight: 300;
+    padding-top: 3px;
+    color: #3094b6  ;
+}
+    </style>
+  </head>
+  <body>
+    <!-- Navigation block -->
+    
+    
+<body ng-app="autospring" class="ng-scope">
+    <!-- Navigation block -->
+    <header class="logo-bg">
+
+    <nav role="navigation" class="navbar  ng-scope" ng-controller="HeaderCtrl">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+        <div class=" navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+            <img src="/assets/logoautospring_h100.png" style="height: 38px; margin-top: 5px;" data-pin-nopin="true">
+            </a>
+        </div>
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-hide="signedIn()" ng-class="{ active: isActive('/login')}" class="ng-hide"><a class="login-btn" href="/login">Login</a></li>
+                <li ng-hide="signedIn()" ng-class="{ active: isActive('/register')}" class="ng-hide"><a class="register-btn" href="/register">Register</a></li>
+                <li><a class="login-btn ng-hide" ng-href="/admin/dealer/new" ng-show="user.configName == 'Admin'" ng-class="{ active: isActive('/admin/dealer/new')}" href="/admin/dealer/new">Add Dealer</a></li>
+                  <!-- <li ng-show="signedIn()" ng-cloak ng-class="{ active: isActive('/dashboard')}">
+                  <a class ="login-btns"  href="/dashboard">
+                    <i class="fa fa-2x fa-download text-muted"></i>
+                  </a>
+                </li> --> 
+                <li ng-show="signedIn()" ng-class="{ active: isActive('/dashboard')}" class=""><a class="login-btn" href="/dashboard">Dashboard</a></li>
+                <li ng-show="user.configName == 'Dealer'" ng-class="{ active: isActive('/dealer/offers/offersMade')}" class="">
+                  <a class="login-btn fa fa-1.5x fa-upload" style="font-weight: 600!important;" href="/dealer/offers/offersMade">
+                  Offers Made
+                  </a>
+                </li>
+                <li ng-show="signedIn()" class=""><a class="login-btn" ng-click="handleSignOutBtnClick()">Log Out</a></li>
+                <li ng-show="signedIn()" class=""><a style="color:#36586f;" class="ng-binding"><i class="fa fa-user-o" aria-hidden="true" style="font-size: 1.4em; color:#36586f ;"></i> Blue Hyundai</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+     </header>
+    
+   
+    <!-- end of Navigation block -->
+    <div class="container"><div flash-message="5000"><div role="alert" ng-show="hasFlash" class="alert  alert- alert-dismissible ng-hide alertIn alertOut"> <span dynamic="flash.text"></span> <button type="button" class="close" close-flash=""><span aria-hidden="true">×</span><span class="sr-only">Close</span></button> </div></div> </div>
+    <!-- uiView:  --><div ui-view="" class="ng-scope"><div class="container text-center ng-scope" ng-class="{loading: showLoading}">
+    <div cg-busy="{promise:offerPromise}" style="position: relative;"><div class="cg-busy cg-busy-backdrop cg-busy-backdrop-animation ng-hide ng-scope" ng-show="$cgBusyIsActive()"></div><div class="cg-busy cg-busy-animation ng-hide ng-scope" ng-show="$cgBusyIsActive()"><div class="text-center" style="position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px;">
+    <img src="/assets/loading.gif">
+    <div><strong>Loading...</strong></div>
+</div></div></div>
+</div>
+
+<div class="container ng-scope" ng-show="!showLoading">
+    <h1><a ng-href="/brands/2/models/22/variants/181" class="back-btn" href="/brands/2/models/22/variants/181"><i class="fa fa-arrow-left"></i></a> <strong class="ng-binding">Make Offer for Hyundai Creta 1.6 Diesel SX (O)</strong></h1>
+    <div class="row">
+        <div class="col-xs-6">
+            <img ng-src="/assets/models/Hyundai/Creta.jpg" src="/assets/models/Hyundai/Creta.jpg">
+            <br>
+            <!-- ngIf: request.want_loan -->
+      <div class="row mb-15">
+        <div class="col-xs-12">
+          <h4><b>Additional Information: </b></h4>
+          <p class="ng-binding"></p>
+        </div>
+      </div>
+        </div>
+        <div class="col-xs-6" style="padding: 20px;">
+            <div class="alert alert-warning ng-hide" role="alert" ng-show="offers.length > 0">
+              <strong>Warning!</strong> You already made an offer for this car.
+            </div>
+            <div class="alert alert-success ng-hide" role="alert" ng-show="showSuccess">
+              <strong>Success!</strong> Wait for the User to accept your offer.
+            </div>
+
+            <!-- ngIf: offers.length <= 0 --><div class="panel ng-scope" ng-if="offers.length <= 0">
+        <div class="panel-body">
+          <br clear="all">
+          <form role="form" class="ng-pristine ng-valid">
+            <div class="form-group">
+                <label>Ex Showroom Price (in Rs.): </label>
+                <input type="text" placeholder="600000.00" ng-model="offerForm.ex_showroom_price" class="form-control ng-pristine ng-untouched ng-valid">
+            </div>
+            <div class="form-group">
+              <label>Road Tax (in Rs.): </label>
+              <input type="text" placeholder="50000.00" ng-model="offerForm.road_tax" class="form-control ng-pristine ng-untouched ng-valid">
+            </div>
+            <div class="form-group">
+              <label>Registration Fees (in Rs.): </label>
+              <input type="text" placeholder="50000.00" ng-model="offerForm.registration_fees" class="form-control ng-pristine ng-untouched ng-valid">
+            </div>
+            <div class="form-group">
+              <label>Insurance (in Rs.): </label>
+              <input type="text" placeholder="40000.00" ng-model="offerForm.insurance" class="form-control ng-pristine ng-untouched ng-valid">
+            </div>
+             <div class="form-group">
+              <label>Extended Warranty (in Rs.): </label>
+              <input type="text" placeholder="50000.00" ng-model="offerForm.extended_warranty" class="form-control ng-pristine ng-untouched ng-valid">
+            </div>
+             <div class="form-group head">
+             <strong>Standard Fitments:</strong>
+            </div>
+<div class="col-xs-6">
+            <div class="form-group">
+             <input type="checkbox" ng-model="offerForm.air_freshners" class="ng-pristine ng-untouched ng-valid">
+              <label>Air_Freshners </label>
+            </div>
+            <div class="form-group">
+             <input type="checkbox" ng-model="offerForm.seat_covers" class="ng-pristine ng-untouched ng-valid">
+              <label>Seat Cover</label>
+            </div>
+            <div class="form-group">
+             <input type="checkbox" ng-model="offerForm.floot_mats" class="ng-pristine ng-untouched ng-valid">
+              <label>Floor Mats</label>
+            </div>
+            <div class="form-group">
+             <input type="checkbox" ng-model="offerForm.car_cover" class="ng-pristine ng-untouched ng-valid">
+              <label>Car Cover</label>
+            </div>
+</div>
+<div class="col-xs-6">
+            <div class="form-group">
+             <input type="checkbox" ng-model="offerForm.parking_sensors" class="ng-pristine ng-untouched ng-valid">
+              <label>Parking Sensors</label>
+            </div>
+            <div class="form-group">
+             <input type="checkbox" ng-model="offerForm.audio_system" class="ng-pristine ng-untouched ng-valid">
+              <label>Audio System</label>
+            </div>
+
+
+            <div class="form-group">
+             <input type="checkbox" ng-model="offerForm.remote_locking_sys" class="ng-pristine ng-untouched ng-valid">
+              <label>Remote Locking System</label>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" ng-model="offerForm.fog_lamps" class="ng-pristine ng-untouched ng-valid">
+              <label>Fog Lamps</label>
+            </div>
+            
+</div>
+<div class="col-md-12">
+<div class="form-group">
+              <input type="checkbox" ng-model="offerForm.exchange_scheme" class="ng-pristine ng-untouched ng-valid">
+              <label>Exchange Scheme Available </label>
+            </div>
+
+</div>
+            <!-- ngIf: request.color_id -->
+            <div class="form-group">
+              <label>Minimum Booking Amount (in Rs.): </label>
+              <input type="text" placeholder="10000" ng-model="offerForm.minimum_booking_amount" class="form-control ng-pristine ng-untouched ng-valid">
+            </div>
+            <div class="form-group">
+              <label>Approx Delivery Duration: </label>
+              <input type="text" placeholder="3 Days" ng-model="offerForm.delivery_duration" class="form-control ng-pristine ng-untouched ng-valid">
+            </div>
+            <div class="form-group">
+                <label>Additional Accessories: </label>
+                <textarea class="form-control ng-pristine ng-untouched ng-valid" ng-model="offerForm.additional_accessories"></textarea>
+            </div>
+            <div class="form-group">
+              <label>Additional Offers: </label>
+              <textarea class="form-control ng-pristine ng-untouched ng-valid" ng-model="offerForm.additional_info"></textarea>
+            </div>
+            <button class="btn btn-block btn-success" ng-click="makeOffer()">Make Offer</button>
+          </form>
+          <div class="col-xs-12 text-center"></div>
+        </div>
+      </div><!-- end ngIf: offers.length <= 0 -->
+
+            <div class="panel ng-hide" ng-show="offers.length > 0">
+        <div class="panel-body">
+          <h3>Offer Made By You</h3>
+          <table class="table">
+            <tbody>
+                <!-- ngRepeat: offer in offers -->
+            </tbody>
+          </table>
+          <div class="col-xs-12 text-center"></div>
+        </div>
+      </div>
+        </div>
+    </div>
+</div></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+   
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script>
+
+    $(document).ready(function () {
+        $(function () {
+
+          var wow = new WOW(
+        {
+          boxClass:     'wow',      // animated element css class (default is wow)
+          animateClass: 'animated', // animation css class (default is animated)
+          offset:       0,          // distance to the element when triggering the animation (default is 0)
+          mobile:       false,       // trigger animations on mobile devices (default is true)
+          live:         true,       // act on asynchronously loaded content (default is true)
+          callback:     function(box) {
+            // the callback is fired every time an animation is started
+            // the argument that is passed in is the DOM node being animated
+          }
+        }
+      );
+      wow.init(); 
+      });
+    });
+</script>
+  </body>
+</html>
